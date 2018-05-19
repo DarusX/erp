@@ -20,6 +20,7 @@ Route::get('/', function () {
 
 Route::get('/reportes/ventas/lineas', 'reportesGral\VentasLineasController@index');
 Route::post('/reportes/ventas/lineas/buscar', 'reportesGral\VentasLineasController@buscar');
+Route::get('/reportes/empleados', 'reportesGral\PlantillaController@index');
 
 Route::get('/{year}', function ($year) {
     $diasEntregaPromedioSqlStr = "(SELECT 

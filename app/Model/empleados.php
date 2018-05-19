@@ -199,5 +199,13 @@ class empleados extends Model
         return $query->get()->toArray();
 
     }
+    public function getNombreCompletoAttribute()
+    {
+        return $this->nombre . ' ' . $this->apaterno . ' ' . $this->amaterno;
+    }
+    public function sucursal()
+    {
+        return $this->belongsTo(sucursal::class, 'id_sucursal_fiscal', 'id_sucursal');
+    }
 }
 

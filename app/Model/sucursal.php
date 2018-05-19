@@ -9,6 +9,9 @@ class sucursal extends Model
     //
     protected $table = "cat_sucursales";
     protected $primaryKey = "id_sucursal";
+    protected $fillable = [
+        'nombre'
+    ];
 
     public function buscarPorProdecimiento($datos)
     {
