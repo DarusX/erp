@@ -22,6 +22,7 @@
     <link href="{{asset('theme/css/light.min.css')}}" rel="stylesheet" type="text/css" id="style_color">
     <link href="{{asset('theme/css/custom.min.css')}}" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="https://keenthemes.com/preview/metronic/theme/admin_4/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
     <style type="text/css">
         .jqstooltip {
             position: absolute;
@@ -109,6 +110,7 @@
     {{--<script src="./Metronic_files/demo.min.js.download" type="text/javascript"></script>--}}
     <script src="{{asset('theme/js/quick-sidebar.min.js.download')}}" type="text/javascript"></script>
     <script src="{{asset('theme/js/quick-nav.min.js.download')}}" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <script>
         $(document).ready(function () {
             $('#clickmewow').click(function () {
